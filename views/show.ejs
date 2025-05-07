@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Details</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .detail-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .detail-container h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .detail-container p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .detail-container a.btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 16px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+        }
+
+        .detail-container a.btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="detail-container">
+        <h2>Post by @<%= post.username %></h2>
+        <p><%= post.content %></p>
+        <a href="/posts" class="btn">Back to All Posts</a>
+    </div>
+</body>
+</html>

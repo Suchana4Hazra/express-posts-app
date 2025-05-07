@@ -1,0 +1,207 @@
+/* Reset and base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main container */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Post card */
+.post {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.post:hover {
+    transform: translateY(-3px);
+}
+
+.post h3 {
+    margin: 0 0 10px;
+    color: #2d3e50;
+}
+
+.post p {
+    margin: 0 0 15px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Button group */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Button (anchor-style) base */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    color: white;
+}
+
+/* Button variants */
+.btn.view {
+    background-color: #3498db;
+}
+
+.btn.edit {
+    background-color: #f39c12;
+}
+
+.btn.delete {
+    background-color: #e74c3c;
+}
+
+.btn.create {
+    background-color: #2ecc71;
+}
+
+/* Hover effects */
+.btn.view:hover {
+    background-color: #2980b9;
+}
+
+.btn.edit:hover {
+    background-color: #d68910;
+}
+
+.btn.delete:hover {
+    background-color: #c0392b;
+}
+
+.btn.create:hover {
+    background-color: #27ae60;
+}
+
+/* Create new section */
+.create-new {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Form Styling */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0077cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.3);
+}
+
+/* Edit Page Styling */
+.edit-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.edit-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.edit-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-container label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.edit-container input[readonly],
+.edit-container textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    background-color: #e9e9e9;
+}
+
+.edit-container textarea {
+    height: 100px;
+    background-color: white;
+}
+
+.edit-container button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.edit-container button:hover {
+    background-color: #218838;
+}
